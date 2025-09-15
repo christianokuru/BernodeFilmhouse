@@ -10,9 +10,9 @@ const isOpen = ref(false);
 
 <template>
   <header
-    class="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md"
+    class="fixed top-0 left-0 w-full z-50 bg-transparent"
   >
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
       <nuxt-link to="/">
         <nuxt-img :src="logoLink" alt="logo" width="180" height="100" />
       </nuxt-link>
@@ -66,7 +66,7 @@ const isOpen = ref(false);
           <nuxt-link
             :to="navLinks.path"
             class="block"
-            active-class="text-red-500 border-b-2 border-red-500"
+            active-class="text-red-500"
             @click="isOpen = false"
           >
             {{ navLinks.name }}
