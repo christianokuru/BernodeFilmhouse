@@ -1,16 +1,15 @@
 <script setup lang="ts">
-import NavbarComponent from "@/components/custom/NavbarComponent.vue";
-import { Toaster } from "@/components/ui/sonner";
-import "vue-sonner/style.css";
-import { useRoute } from "vue-router";
+import NavbarComponent from '@/components/custom/NavbarComponent.vue'
+import { Toaster } from '@/components/ui/sonner'
+import 'vue-sonner/style.css'
+import { useRoute } from 'vue-router'
 
-const route = useRoute();
+const route = useRoute()
 
-const { progress, isLoading, error, start, finish, clear } =
-  useLoadingIndicator({
-    throttle: 900,
-    duration: 1000,
-  });
+const { progress, isLoading, error, start, finish, clear } = useLoadingIndicator({
+  throttle: 900,
+  duration: 1000,
+})
 </script>
 
 <template>
