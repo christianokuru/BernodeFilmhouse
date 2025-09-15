@@ -16,7 +16,7 @@ const { progress, isLoading, error, start, finish, clear } =
 <template>
   <NuxtLoadingIndicator color="orange" />
   <div class="bg-black">
-    <div class="bg-black h-screen text-white border border-gray-700">
+    <div class="bg-black h-screen text-white">
       <Toaster :position="'bottom-right'" :rich-colors="true" />
       <navbar-component />
       <main :class="[route.path !== '/' ? 'pt-24' : '']">
