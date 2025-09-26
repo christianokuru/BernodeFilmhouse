@@ -25,4 +25,9 @@ export default defineNuxtConfig({
       { name: "Open Sans", provider: "google" },
     ],
   },
+  image: {
+    cloudinary :{
+      baseURL: 'https://res.cloudinary.com/dtuexazs1/image/upload'
+    }
+  }
 });

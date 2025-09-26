@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import NavbarComponent from '@/components/custom/NavbarComponent.vue'
+import FooterComponent from '@/components/custom/FooterComponent.vue'
 import { Toaster } from '@/components/ui/sonner'
 import 'vue-sonner/style.css'
 import { useRoute } from 'vue-router'
@@ -13,16 +14,15 @@ const { progress, isLoading, error, start, finish, clear } = useLoadingIndicator
 </script>
 
 <template>
-  <NuxtLoadingIndicator color="orange" />
-  <div class="bg-black">
-    <div class="bg-black h-screen text-white">
-      <Toaster :position="'bottom-right'" :rich-colors="true" />
-      <navbar-component />
-      <main :class="[route.path !== '/' ? 'pt-24' : '']">
-        <nuxt-page />
-      </main>
-      <footer-component />
-    </div>
+  <NuxtLoadingIndicator color="red" />
+
+  <div class="h-screen text-white">
+    <Toaster :position="'bottom-right'" :rich-colors="true" />
+    <navbar-component />
+    <main :class="[route.path !== '/' ? 'pt-24' : '']">
+      <nuxt-page />
+    </main>
+    <footer-component />
   </div>
 </template>
 
