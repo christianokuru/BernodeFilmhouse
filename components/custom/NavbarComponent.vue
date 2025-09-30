@@ -16,7 +16,7 @@ const isOpen = ref(false)
 
       <nav class="hidden md:flex space-x-9">
         <div v-for="navLinks in links" :key="navLinks.name" class="font-semibold">
-          <nuxt-link :to="navLinks.path" active-class="text-red-500 border-b-2 border-red-500">
+          <nuxt-link :to="navLinks.path" active-class="text-primary border-b-2 border-primary">
             {{ navLinks.name }}
           </nuxt-link>
         </div>
