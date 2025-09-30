@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <nuxt-link
-    :to="`/movies/${movie.id}`"
+     :to="`/movies/${movie.slug}`"
     class="group relative block overflow-hidden rounded-lg aspect-[3/4]">
     <nuxt-img
       :src="movie.image"
