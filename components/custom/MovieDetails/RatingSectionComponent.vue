@@ -10,7 +10,7 @@ defineProps({
 <template>
   <section class="py-20 px-6 bg-black">
     <div class="max-w-6xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center text-white">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center text-white max-w-4xl">
         <!-- Rating Section -->
         <div class="flex flex-col items-center md:items-start border-r border-white/30 pr-6">
           <!-- Star Rating Display -->
