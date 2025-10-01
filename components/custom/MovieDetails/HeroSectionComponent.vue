@@ -4,7 +4,6 @@ import { movies } from '@/lib/movies'
 const route = useRoute()
 const movie = movies.find((m) => m.slug === route.params.slug)
 
-// Handle movie not found
 if (!movie) {
   throw createError({
     statusCode: 404,
@@ -14,24 +13,19 @@ if (!movie) {
 </script>
 
 <template>
-  <!-- Hero Section with Movie Details -->
   <section class="h-[calc(100vh-6rem)] w-full overflow-hidden">
-
-    <!-- Background Image with Overlay -->
     <div class="absolute inset-0">
       <nuxt-img
         src="https://demo.gloriathemes.com/noxe/demo/wp-content/uploads/2020/02/title-bar-background.jpg"
         alt="hero-background"
         class="h-full w-full object-cover"
         loading="lazy" />
-      <!-- Dark Overlay -->
       <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
     </div>
 
     <!-- Content -->
     <div class="relative z-10 flex h-full items-center px-6">
       <div class="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <!-- Movie Poster -->
         <div class="hidden md:block">
           <nuxt-img
             :src="movie.image"
@@ -39,7 +33,6 @@ if (!movie) {
             class="w-full max-w-[22rem] rounded-lg shadow-2xl" />
         </div>
 
-        <!-- Movie Info -->
         <div class="text-white">
           <p class="text-lg font-semibold mb-4 text-gray-300">
             {{ new Date(movie.releaseDate).getFullYear() }}
@@ -53,7 +46,6 @@ if (!movie) {
             {{ movie.description }}
           </p>
 
-          <!-- Watch Trailer Button & Meta Info -->
           <div class="flex flex-col gap-6">
             <button class="flex items-center gap-3 bg-transparent border-2 border-white hover:bg-white hover:text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 w-fit">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
