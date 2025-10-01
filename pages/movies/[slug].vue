@@ -2,6 +2,7 @@
 import { movies } from '@/lib/movies'
 import HeroSectionComponent from '@/components/custom/MovieDetails/HeroSectionComponent.vue'
 import RatingSectionComponent from '~/components/custom/MovieDetails/RatingSectionComponent.vue'
+import MovieVideoSectionComponent from '~/components/custom/MovieDetails/MovieVideoSectionComponent.vue'
 
 const route = useRoute()
 const movie = movies.find(m => m.slug === route.params.slug)
@@ -14,20 +15,12 @@ if (!movie) {
   })
 }
 
-// Format the release date
-const formatDate = (dateString) => {
-  const date = new Date(dateString)
-  return date.toLocaleDateString('en-US', { 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
-  })
-}
 </script>
 
 <template>
   <div>
     <hero-section-component />
     <rating-section-component  :movie="movie"/>
+    <movie-video-section-component />
   </div>
 </template>
