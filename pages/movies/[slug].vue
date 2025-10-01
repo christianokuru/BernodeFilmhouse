@@ -1,6 +1,7 @@
 <script setup>
 import { movies } from '@/lib/movies'
 import HeroSectionComponent from '@/components/custom/MovieDetails/HeroSectionComponent.vue'
+import RatingSectionComponent from '~/components/custom/MovieDetails/RatingSectionComponent.vue'
 
 const route = useRoute()
 const movie = movies.find(m => m.slug === route.params.slug)
@@ -27,5 +28,6 @@ const formatDate = (dateString) => {
 <template>
   <div>
     <hero-section-component />
+    <rating-section-component  :movie="movie"/>
   </div>
 </template>
