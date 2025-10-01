@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="py-8 px-6 bg-black">
+  <section class="py-20 px-6 bg-black">
     <div class="max-w-6xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center text-white">
         <!-- Rating Section -->
