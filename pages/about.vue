@@ -1,0 +1,21 @@
+<script setup>
+import GeneralHeroComponent from '~/components/custom/GeneralHeroComponent.vue'
+import AboutSectionComponent from '~/components/custom/AboutUs/AboutSectionComponent.vue'
+import ServicesSectionComponent from '~/components/custom/AboutUs/ServicesSectionComponent.vue'
+
+const heroSectionDetials = {
+  text1: 'Bernode Filmhouse',
+  heroTitle: 'About Us',
+  imageSrc:
+    'https://res.cloudinary.com/dtuexazs1/image/upload/v1758898112/Private-Black-Female-Photographers-and-Content-Creators-You-Should-Work-With-in-2022_tfpeca.jpg',
+  imageAlt: 'hero-image',
+}
+</script>
+
+<template>
+  <div>
+    <general-hero-component :heroSection="heroSectionDetials" />
+    <about-section-component />
+    <services-section-component />
+  </div>
+</template>
