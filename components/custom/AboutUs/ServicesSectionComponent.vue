@@ -39,7 +39,7 @@ const services = [
         <div
           v-for="(service, index) in services"
           :key="index"
-          class="border border-stone-700 p-8 hover:shadow-lg transition-shadow duration-300 bg-black"
+          class="border border-stone-700 p-8 py-20 hover:shadow-lg transition-shadow duration-300 bg-black"
         >
           <img :src="service.icon" class="w-16 h-16 mb-6" :alt="service.alt" />
           <h3 class="text-xl font-bold mb-4 text-white">{{ service.title }}</h3>

@@ -2,6 +2,7 @@
 import GeneralHeroComponent from '~/components/custom/GeneralHeroComponent.vue'
 import AboutSectionComponent from '~/components/custom/AboutUs/AboutSectionComponent.vue'
 import ServicesSectionComponent from '~/components/custom/AboutUs/ServicesSectionComponent.vue'
+import GallerySectionComponent from '~/components/custom/AboutUs/GallerySectionComponent.vue'
 
 const heroSectionDetials = {
   text1: 'Bernode Filmhouse',
@@ -17,5 +18,6 @@ const heroSectionDetials = {
     <general-hero-component :heroSection="heroSectionDetials" />
     <about-section-component />
     <services-section-component />
+    <gallery-section-component />
   </div>
 </template>
