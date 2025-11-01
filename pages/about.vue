@@ -6,6 +6,8 @@ import GallerySectionComponent from '~/components/custom/AboutUs/GallerySectionC
 import PartnersSectionComponent from '~/components/custom/AboutUs/PartnersSectionComponent.vue'
 import TeamSectionComponent from '~/components/custom/AboutUs/TeamSectionComponent.vue'
 import TeamCardsSectionComponent from '~/components/custom/AboutUs/TeamCardsSectionComponent.vue'
+import TestimonialSliderComponent from '~/components/custom/AboutUs/TestimonialSliderComponent.vue'
+import NewsletterSubsriptionComponent from '~/components/custom/AboutUs/NewsletterSubsriptionComponent.vue'
 
 const heroSectionDetials = {
   text1: 'Bernode Filmhouse',
@@ -25,5 +27,7 @@ const heroSectionDetials = {
     <partners-section-component />
     <team-section-component />
     <team-cards-section-component/>
+    <testimonial-slider-component />
+    <newsletter-subsription-component />
   </div>
 </template>
